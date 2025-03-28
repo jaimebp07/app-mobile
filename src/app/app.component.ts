@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import "portealbo-wc";
-
 
 @Component({
   selector: 'app-root',
