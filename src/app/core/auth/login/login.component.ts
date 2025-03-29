@@ -10,5 +10,10 @@ import "portealbo-wc";
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class LoginComponent {
-
+  onButtonClick(event: Event) {
+    console.log("🚀 ~ LoginComponent ~ onButtonClick ~ event:", event)
+    const customEvent = event as CustomEvent;
+    console.log("🚀 ~ LoginComponent ~ onButtonClick ~ customEvent:", customEvent)
+    console.log('Evento capturado en Angular:', customEvent.detail.message);
+  }
 }
