@@ -10,6 +10,8 @@
     "android": "npx cap open android",
     "lint": "ng lint",
     "format": "prettier --write \"./src/**/*.{ts,json,html}\"",
+    "lint-format": "npm run format &&  ng lint --fix",
+		"format-pretty-quick": "pretty-quick --pattern \"src/**/*.*(ts|json|html|scss)\" --staged",
     "prepare": "husky install"
   },
   "private": true,
