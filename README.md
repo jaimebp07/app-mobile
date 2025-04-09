@@ -2,6 +2,20 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.10.
 
+## Start project
+
+- Install the dependencies using node version 20 and run following comand:
+    ```sh
+    npm install
+    ```
+- Install the local web components library:
+    ```sh
+        npm i C:\Users\Andres\Desktop\Box\litElement\lit-components\dist
+    ```
+- Run the followung comand to compile the application and open the simulator:
+    ```sh
+        npm run build:android
+    ```
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.

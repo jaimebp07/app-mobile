@@ -12,7 +12,8 @@
     "format": "prettier --write \"./src/**/*.{ts,json,html}\"",
     "lint-format": "npm run format &&  ng lint --fix",
 		"format-pretty-quick": "pretty-quick --pattern \"src/**/*.*(ts|json|html|scss)\" --staged",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build:android": "npm run build && (if not exist android (npx cap add android)) && npx cap copy && npm run android"    
   },
   "private": true,
   "dependencies": {
